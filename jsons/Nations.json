@@ -6,66 +6,88 @@ Animalistic, Raiderlike
 Royal Savagery
 str vs city-states
 land unit promotion: Royal Savagery: debuff nearby enemies, str vs wounded
+UU: Sabertooth
+UI: Den
 
 =Green Knights=
 Plants, Protective
 Green Oath
 boost food buildings
 promotion: Green Oath: str in city-state, allied tiles
+UU: Ironbark Knight
+UB: Grove
 
 =Strain Zeta=
 Plague, Cultish
 Call of the Miasma
 prophets go faster and can spread 1 more time
 str, can heal in miasma tiles
+UB: Infirmary
+UI: Pathogenic Nexus
 
 =Corpse Corps=
 Zombie, Militarist
 Out for Brains
 unit fights as if full strength
 units gain science when damaging enemies
+UU1: Patchwork Captain
+UU2: Bloodshooter
 
 =Amalgamate=
 Hive Mind, Cultural
 Assimilation Directive
 str when adjacent to other units
 culture, science per x pop in cities
+UB1: Assimilation Station
+UB2: Synch Antenna
 
 =Brain Trust=
 Cerebral, Scientific
 Umbrella of Science
 can take over cs after being allied
 research boost after building science buildings
+UB: Think Tank
+UU: Psyblaster
 
 =Nation of Bud=
 Clones, Diplomatic
 Your Buddy, Bud
 higher city state favor default
 growth boost
+UI: Bud Outpost
+UB: Gestation Pods
 
 =Carcass Caravan Company=
 Western, Traders
 Rain, Sleet or Snow
 boost money per city connection
 more land move speed
+UU: Rough Rider
+UB: Delivery Office
 
 =Spawn of Dagon=
 Fishy, Nautical
 Aquatic Uprising
 belief and food bonuses on coast and river cities
 free embarkation and +1 naval move speed
+UU: Sea Hag
+UI: Abyssal Locker
 
 =Spore Children=
 Hive Mind, Fungal Growth
 Shroom for Growth
 faster tile culture spread
 faster unit build speed
+UB: Fungery
+UI: Mycete-field
 
 =Swarming Hive=
 Eusocial, Insectoid
 Together we Lift
 production per x pop in cities
 more defense str
+UI: Utility Hex
+UU: Scurry
 
 CS (each has their own type a la deciv):
 Cultural:
