@@ -3,49 +3,109 @@
 Ideas:
 =Predator Kings=
 Animalistic, Raiderlike
+Royal Savagery
 str vs city-states
-promotion: Royal Savagery: debuff nearby enemies, str vs wounded
+land unit promotion: Royal Savagery: debuff nearby enemies, str vs wounded
 
 =Green Knights=
 Plants, Protective
+Green Oath
 boost food buildings
 promotion: Green Oath: str in city-state, allied tiles
 
 =Strain Zeta=
 Plague, Cultish
+Call of the Miasma
 prophets go faster and can spread 1 more time
 str, can heal in miasma tiles
 
 =Corpse Corps=
 Zombie, Militarist
+Out for Brains
 unit fights as if full strength
 units gain science when damaging enemies
 
 =Amalgamate=
 Hive Mind, Cultural
+Assimilation Directive
 str when adjacent to other units
-faster tile culture spread
+culture, science per x pop in cities
 
 =Brain Trust=
 Cerebral, Scientific
+Umbrella of Science
 can take over cs after being allied
 research boost after building science buildings
 
 =Nation of Bud=
 Clones, Diplomatic
+Your Buddy, Bud
 higher city state favor default
 growth boost
 
 =Carcass Caravan Company=
 Western, Traders
+Rain, Sleet or Snow
 boost money per city connection
 more land move speed
 
 =Spawn of Dagon=
 Fishy, Nautical
-bonuses on coast and river cities
-more embarked and naval move speed
+Aquatic Uprising
+belief and food bonuses on coast and river cities
+free embarkation and +1 naval move speed
 
+=Spore Children=
+Hive Mind, Fungal Growth
+Shroom for Growth
+faster tile culture spread
+faster unit build speed
+
+=Swarming Hive=
+Eusocial, Insectoid
+Together we Lift
+production per x pop in cities
+more defense str
+
+CS (each has their own type a la deciv):
+Cultural:
+The Gallery
+Heartbeat
+Scrimshanties
+
+Nutritious:
+Flavortown
+Gristlepan
+Three Sisters
+Underroot
+
+Trader:
+Fort Ikea
+Burrows Bazaar
+Pitstop
+
+Violent:
+House of Waffle
+Hunter's Lodge
+Cruelty Squad
+Outpost Jericho
+Red-in-Tooth
+
+Religious:
+Parasite Chapel
+The Maw
+Solar Faithful
+Tlalocan
+
+Scientific:
+Darwinia
+Moreau's Lab
+Voynich Garden
+
+Crafter:
+Flesh Artisans' Guild
+Crucible
+Earthbones Workshop
 */
 
 ]
