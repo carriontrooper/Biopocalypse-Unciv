@@ -7,7 +7,11 @@ Royal Savagery
 str vs city-states
 land unit promotion: Royal Savagery: debuff nearby enemies, str vs wounded
 UU: Sabertooth
+UU: Raptor
+UU: Talonwing
+UU: Butcher
 UI: Den
+UB: Blood Arena
 
 =Green Knights=
 Plants, Protective
@@ -15,31 +19,45 @@ Green Oath
 boost food buildings
 promotion: Green Oath: str in city-state, allied tiles
 UU: Ironbark Knight
+UU: Dryad Knight
+UU: Evergreen Knight
 UB: Grove
+UB: Training Forest
 
 =Strain Zeta=
 Plague, Cultish
 Call of the Miasma
 prophets go faster and can spread 1 more time
 str, can heal in miasma tiles
+UU: Miasmatic Host
+UU: Vector
 UB: Infirmary
-UI: Pathogenic Nexus
+UI: Pathogenic Sigil
+UI: Plague Miasma
 
 =Corpse Corps=
 Zombie, Militarist
 Out for Brains
 unit fights as if full strength
 units gain science when damaging enemies
-UU1: Patchwork Captain
-UU2: Bloodshooter
+UU: Patchwork Sarge
+UU: Patchwork Colonel
+UU: Patchwork General
+UU: Spineshooter
+UU: Musclehead
+UU: Rotkommando
+UI: Body Barricade
 
 =Amalgamate=
 Hive Mind, Cultural
 Assimilation Directive
 str when adjacent to other units
 culture, science per x pop in cities
-UB1: Assimilation Station
-UB2: Synch Antenna
+UB: Assimilation Station
+UB: Unity Node
+UB: Crystal Walls
+UB: Bioalloy Forge
+UI: Synch Antenna
 
 =Brain Trust=
 Cerebral, Scientific
@@ -47,7 +65,11 @@ Umbrella of Science
 can take over cs after being allied
 research boost after building science buildings
 UB: Think Tank
-UU: Psyblaster
+UB: Ego Chamber
+UI: Auxiliary Lobe
+UU: Psyscreamer
+UU: Observer
+UU: Analyst
 
 =Nation of Bud=
 Clones, Diplomatic
@@ -56,6 +78,8 @@ higher city state favor default
 growth boost
 UI: Bud Outpost
 UB: Gestation Pods
+UB: Bud Emporium
+UU: Budtler
 
 =Carcass Caravan Company=
 Western, Traders
@@ -63,6 +87,8 @@ Rain, Sleet or Snow
 boost money per city connection
 more land move speed
 UU: Rough Rider
+UU: Boneslinger
+UU: Armed Caravan
 UB: Delivery Office
 
 =Spawn of Dagon=
@@ -71,7 +97,10 @@ Aquatic Uprising
 belief and food bonuses on coast and river cities
 free embarkation and +1 naval move speed
 UU: Sea Hag
+UU: Anglermaw
+UU: Hermit Battleship
 UI: Abyssal Locker
+UB: Dagonite Shrine
 
 =Spore Children=
 Hive Mind, Fungal Growth
@@ -79,7 +108,9 @@ Shroom for Growth
 faster tile culture spread
 faster unit build speed
 UB: Fungery
-UI: Mycete-field
+UI: Bolegus Tower
+UU: Deathcap
+UU: Sporer
 
 =Swarming Hive=
 Eusocial, Insectoid
@@ -87,47 +118,11 @@ Together we Lift
 production per x pop in cities
 more defense str
 UI: Utility Hex
-UU: Scurry
-
-CS (each has their own type a la deciv):
-Cultural:
-The Gallery
-Heartbeat
-Scrimshanties
-
-Nutritious:
-Flavortown
-Gristlepan
-Three Sisters
-Underroot
-
-Trader:
-Fort Ikea
-Burrows Bazaar
-Pitstop
-
-Violent:
-House of Waffle
-Hunter's Lodge
-Cruelty Squad
-Outpost Jericho
-Red-in-Tooth
-
-Religious:
-Parasite Chapel
-The Maw
-Solar Faithful
-Tlalocan
-
-Scientific:
-Darwinia
-Moreau's Lab
-Voynich Garden
-
-Crafter:
-Flesh Artisans' Guild
-Crucible
-Earthbones Workshop
+UI: Honey Hex
+UI: Defense Hex
+UI: Nest Hex
+UU: Hiveguard
+UU: Scurrier
 */
 
 ]
