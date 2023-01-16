@@ -1,2 +1,8 @@
 [
+	//base terrains:
+	//land: dermafield, mycelium, chlorofield, necrofield, scabland
+	//water: bacterial mat (coast), abyss (ocean), lacuna (lake)
+	//features:
+	//land: humps (hills), bony ridge (mountains), growth (forest), overgrowth (jungle), sweat pit, fissure, vitaspring (oasis in necrofield & scabland), miasma
+	//water: reef, vents, float
 ]
