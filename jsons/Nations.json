@@ -10,6 +10,7 @@ UU: Sabertooth
 UU: Raptor
 UU: Talonwing
 UU: Butcher
+UGP: Predator King
 UI: Den
 UB: Blood Arena
 
@@ -21,16 +22,18 @@ promotion: Green Oath: str in city-state, allied tiles
 UU: Ironbark Knight
 UU: Dryad Knight
 UU: Evergreen Knight
+UGP: Greenwood Grandmaster
 UB: Grove
 UB: Training Forest
 
 =Strain Zeta=
 Plague, Cultish
 Call of the Miasma
-prophets go faster and can spread 1 more time
+prophets and missionaries go faster and can spread 1 more time
 str, can heal in miasma tiles
 UU: Miasmatic Host
 UU: Vector
+UGP: Plague Prophet
 UB: Infirmary
 UI: Pathogenic Sigil
 UI: Plague Miasma
@@ -42,7 +45,7 @@ unit fights as if full strength
 units gain science when damaging enemies
 UU: Patchwork Sarge
 UU: Patchwork Colonel
-UU: Patchwork General
+UGP: Patchwork General
 UU: Spineshooter
 UU: Musclehead
 UU: Rotkommando
@@ -58,6 +61,7 @@ UB: Unity Node
 UB: Crystal Walls
 UB: Bioalloy Forge
 UI: Synch Antenna
+UGP: Alpha Amalgamator
 
 =Brain Trust=
 Cerebral, Scientific
@@ -70,6 +74,7 @@ UI: Auxiliary Lobe
 UU: Psyscreamer
 UU: Observer
 UU: Analyst
+UGP: Great Cerebrum
 
 =Nation of Bud=
 Clones, Diplomatic
@@ -80,6 +85,7 @@ UI: Bud Outpost
 UB: Gestation Pods
 UB: Bud Emporium
 UU: Budtler
+UGP: Great Bud
 
 =Carcass Caravan Company=
 Western, Traders
@@ -89,6 +95,7 @@ more land move speed
 UU: Rough Rider
 UU: Boneslinger
 UU: Armed Caravan
+UGP: Cheetah Express
 UB: Delivery Office
 
 =Spawn of Dagon=
@@ -99,6 +106,7 @@ free embarkation and +1 naval move speed
 UU: Sea Hag
 UU: Anglermaw
 UU: Hermit Battleship
+UGP: High Priest of Dagon
 UI: Abyssal Locker
 UB: Dagonite Shrine
 
@@ -111,6 +119,7 @@ UB: Fungery
 UI: Bolegus Tower
 UU: Deathcap
 UU: Sporer
+UGP: Sporemother
 
 =Swarming Hive=
 Eusocial, Insectoid
@@ -123,6 +132,7 @@ UI: Defense Hex
 UI: Nest Hex
 UU: Hiveguard
 UU: Scurrier
+UGP: Hive Queen
 
 =Vitruvian Order=
 Peak Human, Homunculi
@@ -131,8 +141,9 @@ extra strength vs infantry
 +1 culture per specialist
 UB: Vitruvian Monument
 UB: Anthropocenter
-UU: Prime
-UU: Gene Champion
+UB: Humanitarian Aid Station
+UGP: Prime
+UU: Exemplar
 */
 
 ]
