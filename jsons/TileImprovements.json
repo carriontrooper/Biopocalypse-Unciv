@@ -1,2 +1,78 @@
 [
+	// essentials
+	{
+		"name": "Stasis Cocoons",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"uniques": ["Unpillagable", "Provides a random bonus when entered","Unbuildable"],
+		"civilopediaText": [
+			/*
+			{
+				"extraImage": "TileSets/FantasyHex/Tiles/Crash site",
+				"imageSize": 64
+			},
+			*/
+			{
+				"Separator": true
+			},
+			{
+				"text": "These ancient cocoons could contain anything - from viable biomass, to old Earth relics, to gestating citizens."
+			}
+		]
+	},
+	{
+		"name": "City ruins", //rename to City carcass
+		"terrainsCanBeBuiltOn": ["Land"],
+		"uniques": ["Unpillagable","Unbuildable","Will be replaced by automated workers"],
+		"civilopediaText": [
+			/*
+			{
+				"extraImage": "TileSets/FantasyHex/Tiles/City ruins",
+				"imageSize": 64
+			},
+			*/
+			{
+				"Separator": true
+			},
+			{ "text": "A bleak reminder that not even Cities last forever." }
+		]
+	},
+	{
+		"name": "City center", //rename to City root
+		"terrainsCanBeBuiltOn": ["Land"],
+		"uniques": ["Unpillagable", "Irremovable","Unbuildable"],
+		"civilopediaText": [
+			/*
+			{
+				"extraImage": "TileSets/FantasyHex/Tiles/City center-Landfall era",
+				"imageSize": 64
+			},
+			*/
+			{
+				"Separator": true
+			},
+			{ "text": "The center of a City" },
+			{
+				"text": "Appearance changes with the technological era of the owning civilization"
+			}
+		]
+	},
+	{
+		"name": "Barbarian encampment", //rename to Feral Warren
+		"terrainsCanBeBuiltOn": ["Land"],
+		"uniques": ["Unpillagable","Unbuildable"],
+		"civilopediaText": [
+			/*
+			{
+				"extraImage": "TileSets/FantasyHex/Tiles/Barbarian encampment",
+				"imageSize": 64
+			},
+			*/
+			{
+				"Separator": true
+			},
+			{
+				"text": "The breeding grounds of feral biomorphs. A viable source of biomatter, if you overlook where the Ferals get it from."
+			}
+		]
+	}
 ]
