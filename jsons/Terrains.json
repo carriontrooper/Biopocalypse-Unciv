@@ -5,4 +5,509 @@
 	//features:
 	//land: humps (hills), bony ridge (mountains), growth (forest), overgrowth (jungle), sweat pit, fissure, vitaspring (oasis in necrofield & scabland), miasma
 	//water: reef, vents, float
+
+	// Base terrains
+	{
+		"name": "Abyss",
+		"type": "Water",
+		"food": 1,
+		"gold": 1,
+		"movementCost": 1,
+		"RGB": [0, 27, 107],
+		"uniques": [
+			//"Becomes [Depths] when adjacent to [InsertNaturalWonder]"
+		],
+		"civilopediaText": [
+			{
+				"text": "Great chasms rend underwater, where vast deep things lurk in the unfathomable dark.",
+				//"link": "Resource/Vent"
+			}
+		]
+	},
+	{
+		"name": "Depths",
+		"type": "Water",
+		"food": 1,
+		"movementCost": 1,
+		"RGB": [51, 95, 214],
+		"uniques": [
+			"[+2] to Fertility for Map Generation",
+			"Considered [Desirable] when determining start locations <on water maps>",
+			"Every [60] tiles with this terrain will receive a major deposit of a strategic resource."
+		],
+		"civilopediaText": [
+			{
+				"text": "The abundant waters no longer taste salty - there is an imperceptible sense of dread mixed in as well."
+			}
+		]
+	},
+	{
+		"name": "Lacuna",
+		"type": "Water",
+		"food": 2,
+		"gold": 1,
+		"RGB": [94, 154, 242],
+		"uniques": [
+			"Fresh water",
+			"Considered [Food] when determining start locations",
+			"Considered [Desirable] when determining start locations"
+		],
+		"civilopediaText": [
+			{
+				"text": "Where the living land allows water to pool, life blooms around it - despite the slightly increased viscosity."
+			}
+		]
+	},
+	{
+		"name": "Chlorofield",
+		"type": "Land",
+		"food": 2,
+		"movementCost": 1,
+		"RGB": [101, 230, 96],
+		"uniques": [
+			"Occurs at temperature between [-0.4] and [0.1] and humidity between [0.2] and [0.4]",
+			"Occurs at temperature between [0.1] and [0.2] and humidity between [0.3] and [0.4]",
+			"Occurs at temperature between [-0.5] and [0] and humidity between [0.6] and [0.7]",
+			"Occurs at temperature between [-0.5] and [-0.2] and humidity between [0.7] and [0.8]",
+			"Occurs at temperature between [0.7] and [1] and humidity between [0.7] and [1]",
+			"Occurs at temperature between [0.8] and [1] and humidity between [0.6] and [0.7]",
+			"Occurs at temperature between [0.9] and [1] and humidity between [0.5] and [0.6]",
+			"[+4] to Fertility for Map Generation",
+			"A Region is formed with at least [30]% [Chlorofield] tiles, with priority [7]",
+			"A Region can not contain more [Dermafield] tiles than [Chlorofield] tiles",
+			"Considered [Desirable] when determining start locations",
+			"Considered [Food] when determining start locations <in [Overgrowth] Regions>",
+			"Considered [Food] when determining start locations <in [Growth] Regions>",
+			"Considered [Food] when determining start locations <in [Humps] Regions>",
+			"Considered [Food] when determining start locations <in [Chlorofield] Regions>",
+			"Considered [Food] when determining start locations <in [Hybrid] Regions>",
+			//"Becomes [Mycelium] when adjacent to [Uttershroom]",
+			//"Becomes [Desert] when adjacent to [Megaxenoform Graveyard]",
+			"Every [33] tiles with this terrain will receive a major deposit of a strategic resource."
+		],
+		"civilopediaText": [
+			{
+				"text": "The skin-surface of this living land flourishes with photosynthetic bacteria - which becomes the foundation of the local ecosystem."
+			}
+		]
+	},
+	{
+		"name": "Dermafield",
+		"type": "Land",
+		"food": 1,
+		"production": 1,
+		"movementCost": 1,
+		"RGB": [224, 174, 117],
+		"uniques": [
+			"Occurs at temperature between [-0.4] and [-0.1] and humidity between [0] and [0.2]",
+			"Occurs at temperature between [-0.4] and [0.1] and humidity between [0.4] and [0.6]",
+			"Occurs at temperature between [0.2] and [0.4] and humidity between [0.4] and [0.5]",
+			"Occurs at temperature between [0.3] and [0.5] and humidity between [0.5] and [0.6]",
+			"Occurs at temperature between [0.9] and [1] and humidity between [0] and [0.2]",
+			"Occurs at temperature between [0.8] and [0.9] and humidity between [0.2] and [0.6]",
+			"Occurs at temperature between [0.7] and [0.8] and humidity between [0.3] and [0.4]",
+			"Occurs at temperature between [0.6] and [0.8] and humidity between [0.4] and [0.7]",
+			"[+3] to Fertility for Map Generation",
+			"A Region is formed with at least [30]% [Dermafield] tiles, with priority [6]",
+			"A Region can not contain more [Chlorofield] tiles than [Dermafield] tiles",
+			"Considered [Desirable] when determining start locations",
+			"Considered [Food] when determining start locations <in [Necrofield] Regions>",
+			"Considered [Food] when determining start locations <in [Scabland] Regions>",
+			"Considered [Food] when determining start locations <in [Humps] Regions>",
+			"Considered [Food] when determining start locations <in [Dermafield] Regions>",
+			"Considered [Food] when determining start locations <in [Hybrid] Regions>",
+			//"Becomes [Mycelium] when adjacent to [Uttershroom]",
+			//"Becomes [Desert] when adjacent to [Megaxenoform Graveyard]",
+			"Every [33] tiles with this terrain will receive a major deposit of a strategic resource."
+		],
+		"civilopediaText": [
+			{
+				"text": "Vast plains of still-living fertile skin, the likes of which never before seen in the old iteration of Earth."
+			}
+		]
+	},
+	{
+		"name": "Mycelium",
+		"type": "Land",
+		"food": 1,
+		"production": 1,
+		"movementCost": 1,
+		"RGB": [154, 107, 214],
+		"uniques": [
+			"Occurs at temperature between [-0.6] and [0.7] and humidity between [0.8] and [1]",
+			"Occurs at temperature between [-0.2] and [0.7] and humidity between [0.7] and [0.8]",
+			"Occurs at temperature between [0] and [0.5] and humidity between [0.6] and [0.7]",
+			"Occurs at temperature between [0.1] and [0.3] and humidity between [0.5] and [0.6]",
+			"Occurs at temperature between [0.1] and [0.2] and humidity between [0.4] and [0.5]",
+			"Occurs in groups of [2] to [5] tiles",
+			"[+3] to Fertility for Map Generation",
+			"A Region is formed with at least [30]% [Mycelium] tiles, with priority [6]",
+			"A Region can not contain more [Grassland] tiles than [Mycelium] tiles",
+			"Considered [Desirable] when determining start locations",
+			"Considered [Food] when determining start locations <in [Necrofield] Regions>",
+			"Considered [Food] when determining start locations <in [Scabland] Regions>",
+			"Considered [Food] when determining start locations <in [Humps] Regions>",
+			"Considered [Food] when determining start locations <in [Dermafield] Regions>",
+			"Considered [Food] when determining start locations <in [Hybrid] Regions>",
+			"Becomes [Desert] when adjacent to [Megaxenoform Graveyard]",
+			"Becomes [Plains] when adjacent to [Tree of Worlds]",
+			"Every [33] tiles with this terrain will receive a major deposit of a strategic resource."
+		],
+		"civilopediaText": [
+			{
+				"text": "Spongy and fibrous hyphae infest these lands, offering an easy source of food for the bioforms taking refuge in it."
+			}
+		]
+	},
+	{
+		"name": "Necrofield",
+		"type": "Land",
+		"food": 1,
+		"movementCost": 1,
+		"RGB": [203, 190, 204],
+		"uniques": [
+			"Occurs at temperature between [-0.9] and [-0.6] and humidity between [0.8] and [1]",
+			"Occurs at temperature between [-0.8] and [-0.5] and humidity between [0.6] and [0.8]",
+			"Occurs at temperature between [-0.7] and [-0.4] and humidity between [0.4] and [0.6]",
+			"Occurs at temperature between [-0.6] and [-0.4] and humidity between [0.2] and [0.4]",
+			"Occurs at temperature between [-0.6] and [-0.4] and humidity between [0] and [0.2]",
+			
+			"Occurs at temperature between [-1] and [-0.9] and humidity between [0] and [1]",
+			"Occurs at temperature between [-0.9] and [-0.8] and humidity between [0] and [0.8]",
+			"Occurs at temperature between [-0.8] and [-0.7] and humidity between [0] and [0.6]",
+			"Occurs at temperature between [-0.7] and [-0.6] and humidity between [0] and [0.4]",
+			
+			"Always Fertility [-1] for Map Generation",
+			"A Region is formed with at least [30]% [Necrofield] tiles, with priority [1]",
+			"Considered [Food] when determining start locations <in [Necrofield] Regions>",
+			"Considered [Desirable] when determining start locations <in [Necrofield] Regions>",
+			"Becomes [Dermafield] when adjacent to [River]",
+			"Becomes [Dermafield] when adjacent to [Lacuna]",
+			//"Becomes [Mycelium] when adjacent to [Uttershroom]",
+			//"Becomes [Desert] when adjacent to [Megaxenoform Graveyard]",
+			//"Becomes [Plains] when adjacent to [Tree of Worlds]",
+			"Every [16] tiles with this terrain will receive a major deposit of a strategic resource."
+		],
+		"civilopediaText": [
+			{
+				"text": "Dead, frozen flesh make up most of the surface of this land - but underneath, one can find pockets of still-living flesh."
+			}
+		]
+	},
+	{
+		"name": "Scabland",
+		"type": "Land",
+		"movementCost": 1,
+		"RGB": [199, 117, 74],
+		"uniques": [
+			"Occurs at temperature between [-0.1] and [0.9] and humidity between [0] and [0.2]",
+			"Occurs at temperature between [0.1] and [0.8] and humidity between [0.2] and [0.3]",
+			"Occurs at temperature between [0.2] and [0.7] and humidity between [0.3] and [0.4]",
+			"Occurs at temperature between [0.4] and [0.6] and humidity between [0.4] and [0.5]",
+			"Occurs at temperature between [0.5] and [0.6] and humidity between [0.5] and [0.7]",
+			"[+1] to Fertility for Map Generation",
+			"A Region is formed with at least [25]% [Scabland] tiles, with priority [4]",
+			"Becomes [Sweat Pit] when adjacent to [River]",
+			"Becomes [Dermafield] when adjacent to [Lacuna]",
+			//"Becomes [Mycelium] when adjacent to [Uttershroom]",
+			//"Becomes [Plains] when adjacent to [Tree of Worlds]",
+			"Considered [Undesirable] when determining start locations <in all except [Scabland] Regions>",
+			"Every [13] tiles with this terrain will receive a major deposit of a strategic resource."
+		],
+		"civilopediaText": [
+			{
+				"text": "A sea of seared, scabbed-over flesh, only the hardiest lifeforms survive here."
+			}
+		]
+	},
+	
+	{
+		"name": "Bony Ridge",
+		"type": "Land",
+		"impassable": true,
+		"defenceBonus": 0.25,
+		"RGB": [250, 245, 230],
+		"uniques": [
+			"Rough terrain",
+			"Has an elevation of [4] for visibility calculations",
+			"Occurs in chains at high elevations",
+			"Units ending their turn on this terrain take [50] damage",
+			"Always Fertility [-2] for Map Generation",
+			"Considered [Undesirable] when determining start locations"
+		],
+		"civilopediaText": [
+			{
+				"text": "Tall peaks of jutting, jagged bone, life here are few yet hardy."
+			}
+		]
+	},
+
+	// Terrain features
+	{
+		"name": "Humps",
+		"type": "TerrainFeature",
+		"production": 2,
+		"movementCost": 2,
+		"overrideStats": true,
+		"defenceBonus": 0.25,
+		"RGB": [168, 141, 109],
+		"occursOn": [
+			"Tundra",
+			"Plains",
+			"Grassland",
+			"Desert",
+			"Snow",
+			"Mycelium"
+		],
+		"uniques": [
+			"Rough terrain",
+			"[+5] Strength for cities built on this terrain",
+			"Has an elevation of [2] for visibility calculations",
+			"Occurs in groups around high elevations",
+			"[+1] to Fertility for Map Generation",
+			"A Region is formed with at least [40]% [Humps] tiles, with priority [5]",
+			"Base Terrain on this tile is not counted for Region determination",
+			//"Starts in regions of this type receive an extra [Chitin]",
+			"Considered [Desirable] when determining start locations",
+			"Considered [Production] when determining start locations",
+			"Every [22] tiles with this terrain will receive a major deposit of a strategic resource."
+		],
+		"civilopediaText": [
+			{
+				"text": "At times the living land's flesh folds in on top of itself, creating mounds of elevated meat and skin."
+			}
+		]
+	},
+	{
+		"name": "Growth",
+		"type": "TerrainFeature",
+		"production": 1,
+		"food": 1,
+		"movementCost": 2,
+		"overrideStats": true,
+		"unbuildable": true,
+		"defenceBonus": 0.25,
+		"occursOn": ["Necrofield", "Demafield", "Chlorofield", "Humps", "Mycelium"],
+		"uniques": [
+			"Rough terrain",
+			"Vegetation",
+			"Provides a one-time Production bonus to the closest city when cut down",
+			"Blocks line-of-sight from tiles at same elevation",
+			"[50]% Chance to be destroyed by nukes",
+			"A Region is formed with at least [30]% [Growth] tiles, with priority [3]",
+			"A Region is formed with at least [35]% [Growth] tiles and [Overgrowth] tiles, with priority [3]",
+			"A Region can not contain more [Overgrowth] tiles than [Growth] tiles",
+			"Considered [Desirable] when determining start locations",
+			"Considered [Production] when determining start locations",
+			"Considered [Food] when determining start locations <in [Growth] Regions>",
+			"Considered [Food] when determining start locations <in [Necrofield] Regions>",
+			"Every [39] tiles with this terrain will receive a major deposit of a strategic resource."
+		],
+		"civilopediaText": [
+			{
+				"text": "Growths of sedentary life form the basis for the local ecosystem."
+			}
+		]
+	},
+	{
+		"name": "Overgrowth",
+		"type": "TerrainFeature",
+		"food": 2,
+		"movementCost": 2,
+		"overrideStats": true,
+		"unbuildable": true,
+		"defenceBonus": 0.25,
+		"occursOn": ["Dermafield", "Chlorofield", "Mycelium"],
+		"uniques": [
+			"Rough terrain",
+			"Vegetation",
+			"Blocks line-of-sight from tiles at same elevation",
+			"[50]% Chance to be destroyed by nukes",
+			"[-1] to Fertility for Map Generation",
+			"A Region is formed with at least [30]% [Overgrowth] tiles, with priority [2]",
+			"A Region is formed with at least [35]% [Overgrowth] tiles and [Growth] tiles, with priority [2]",
+			"A Region can not contain more [Growth] tiles than [Overgrowth] tiles",
+			"Considered [Food] when determining start locations <in all except [Chlorofield] Regions>",
+			"Considered [Desirable] when determining start locations <in all except [Chlorofield] Regions>",
+			"Every [33] tiles with this terrain will receive a major deposit of a strategic resource."
+		],
+		"civilopediaText": [
+			{
+				"text": "Vast, thick growths of sedentary life form the basis for a myriad of local ecosystems."
+			}
+		]
+	},
+	{
+		"name": "Sweat Pit",
+		"type": "TerrainFeature",
+		"food": -1,
+		"movementCost": 3,
+		"unbuildable": true,
+		"defenceBonus": -0.15,
+		"occursOn": ["Chlorofield", "Mycelium"],
+		"uniques": [
+			"Rare feature",
+			"[-2] to Fertility for Map Generation",
+			"Every [9] tiles with this terrain will receive a major deposit of a strategic resource."
+		],
+		"civilopediaText": [
+			{
+				"text": "Stangant, viscous and stinky water that nevertheless becomes home to strange forms of life."
+			}
+		]
+	},
+	{
+		"name": "Fissure",
+		"type": "TerrainFeature",
+		"production": 2,
+		"movementCost": 3,
+		"unbuildable": true,
+		"defenceBonus": -0.15,
+		"occursOn": ["Chlorofield", "Mycelium"],
+		"uniques": [
+			"Rare feature",
+			"[-2] to Fertility for Map Generation",
+			"Every [9] tiles with this terrain will receive a major deposit of a strategic resource."
+		],
+		"civilopediaText": [
+			{
+				"text": "Great cracks on the surface-skin of the living land, they might lead to pockets of underground life."
+			}
+		]
+	},
+	{
+		"name": "Fallout",
+		"type": "TerrainFeature",
+		"movementCost": 2,
+		"unbuildable": true,
+		"uniques": [
+			"Nullifies all other stats this tile provides",
+			"Doesn't generate naturally"
+		],
+		// For map editor only - the generator won't place it without code or enabling uniques
+		// If the map generator is ever updated to always take these into account, it should also take the "Doesn't generate naturally" unique into account
+		"occursOn": [
+			"Chlorofield",
+			"Dermafield",
+			"Scabland",
+			"Necrofield",
+			"Forest",
+			"Jungle",
+			"Hill",
+			"Marsh",
+			"Vitaspring",
+			"Mycelium"
+		],
+		"defenceBonus": -0.15,
+		"civilopediaText": [
+			{
+				"text": "Hazardous, anomalous inorganic particles permeate this wasteland, rendering it inimical to life."
+			}
+		]
+	},
+	{
+		"name": "Miasma",
+		"type": "TerrainFeature",
+		"movementCost": 2,
+		"unbuildable": false,
+		"uniques": [
+			"Rare feature",
+			"Considered [Undesirable] when determining start locations",
+			"[-2] to Fertility for Map Generation"
+		],
+		// For map editor only - the generator won't place it without code or enabling uniques
+		// If the map generator is ever updated to always take these into account, it should also take the "Doesn't generate naturally" unique into account
+		"occursOn": [
+			"Chlorofield",
+			"Dermafield",
+			"Scabland",
+			"Necrofield",
+			"Forest",
+			"Jungle",
+			"Hill",
+			"Marsh",
+			"Mycelium"
+		],
+		"defenceBonus": -0.15,
+		"civilopediaText": [
+			{
+				"text": "Hazardous organic particles permeate this land, causing respiratory problems on humans."
+			}
+		]
+	},
+	{
+		"name": "Vitaspring",
+		"type": "TerrainFeature",
+		"food": 3,
+		"gold": 1,
+		"movementCost": 1,
+		"unbuildable": true,
+		"defenceBonus": -0.1,
+		"occursOn": ["Scabland","Necrofield"],
+		"uniques": [
+			"Fresh water",
+			"Rare feature",
+			"Only [All Road] improvements may be built on this tile",
+			"Always Fertility [4] for Map Generation",
+			"Considered [Food] when determining start locations",
+			"Considered [Desirable] when determining start locations"
+		],
+		"civilopediaText": [
+			{
+				"text": "Anomalous, hardy spots of life in otherwise barren lands - some theorize these are naturally-occurring source of Orgone fields."
+			}
+		]
+	},
+	{
+		"name": "Float",
+		"type": "TerrainFeature",
+		"impassable": true,
+		"overrideStats": true,
+		"occursOn": ["Abyss", "Depths"],
+		"uniques": [
+			"Occurs at temperature between [-1] and [0] and humidity between [0] and [1]",
+			"[-1] to Fertility for Map Generation",
+			"Considered [Undesirable] when determining start locations"
+		],
+		"civilopediaText": [
+			{
+				"text": "Mats of bloated, decayed flesh - often petrified. Traversing such a floating field is a hazard of its own."
+			}
+		]
+	},
+	{
+		"name": "Reef",
+		"type": "TerrainFeature",
+		"movementCost": 1,
+		"food": 1,
+		"production": 1,
+		"occursOn": ["Depths"],
+		"uniques": ["Rare feature"],
+		"civilopediaText": [
+			{
+				"text": "Sedentary lifeforms are prolific here, creating an ecosystem teeming with life."
+			}
+		]
+	},
+	{
+		"name": "Vents",
+		"type": "TerrainFeature",
+		//"impassable": true,
+		//"overrideStats": true,
+		"production": 3,
+		"occursOn": ["Abyss", "Depths"],
+		"uniques": [
+			"Occurs at temperature between [0] and [1] and humidity between [0] and [1]",
+			"[+1] to Fertility for Map Generation",
+			"Considered [Desirable] when determining start locations"
+		],
+		"civilopediaText": [
+			{
+				"text": "Deep in the depths strange organic growths thrive on top of fissures, emanating strange heat that attracts life."
+			}
+		]
+	}
+
+	// Natural (Unnatural?) Wonders
+	
 ]
