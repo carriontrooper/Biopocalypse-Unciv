@@ -8,7 +8,7 @@
 
 	// Base terrains
 	{
-		"name": "Abyss",
+		"name": "Ocean", //rename to Abyss
 		"type": "Water",
 		"food": 1,
 		"gold": 1,
@@ -25,7 +25,7 @@
 		]
 	},
 	{
-		"name": "Depths",
+		"name": "Coast", //rename to Depths
 		"type": "Water",
 		"food": 1,
 		"movementCost": 1,
@@ -42,7 +42,7 @@
 		]
 	},
 	{
-		"name": "Lacuna",
+		"name": "Lakes", //rename to Lacuna
 		"type": "Water",
 		"food": 2,
 		"gold": 1,
