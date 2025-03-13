@@ -7,5 +7,9 @@
 		"outerColor": [253,236,234],
         "row": 0,
         "column": 0
-    }
+    },
+	{	// For barbarian water units
+		"name": "Unable to pillage tiles",
+		"uniques": ["Unable to pillage tiles"]
+	}
 ]
